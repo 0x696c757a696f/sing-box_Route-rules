@@ -5,9 +5,9 @@
   },
   "experimental": {
     "clash_api": {
-      "external_controller": "127.0.0.1:9090",
+      "external_controller": "127.0.0.1:39262",
       "external_ui": "ui",
-      "secret": "",
+      "secret": "bashcurda",
       "default_mode": "rule"
     },
   "cache_file": {
@@ -98,7 +98,7 @@
         "server-1",
         "server-2"
       ],
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://204.io/generate_204",
       "interval": "10m",
       "tolerance": 100
     },
@@ -172,34 +172,6 @@
         "server-1",
         "server-2"
       ]
-    },
-    {
-      "tag": "server-1",
-      "type": "trojan",
-      "server": "your server.com",
-      "server_port": 443,
-      "password": "your password",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "your server.com"
-      }
-    },
-    {
-      "tag": "server-2",
-      "type": "tuic",
-      "server": "your server.com",
-      "server_port": 12345,
-      "uuid": "your uuid",
-      "password": "your password",
-      "congestion_control": "bbr",
-      "tls": {
-          "enabled": true,
-          "server_name": "your server.com",
-          "alpn": [
-              "h3"
-          ]
-      }
     },
     {
       "type": "direct",
